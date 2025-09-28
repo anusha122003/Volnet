@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_matches"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Matches" />
+
+    <item
+        android:id="@+id/nav_teams"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Teams" />
+
+    <item
+        android:id="@+id/nav_rules"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Rules" />
+
+</menu>
