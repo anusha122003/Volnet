@@ -9,7 +9,7 @@
     <LinearLayout
         android:id="@+id/header_layout"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:paddingStart="16dp"
@@ -19,30 +19,413 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <ImageView
 
+        android:id="@+id/logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/add_team"
+            android:contentDescription="@string/add_team_logo"
+            android:layout_marginEnd="5dp"/>
 
         <TextView
             android:id="@+id/app_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add_teams"
-            android:textColor="@android:color/white"
-            android:textSize="22sp"
-            android:textStyle="bold"/>
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:shadowColor="#55000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"/>
+
+
+
     </LinearLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_bar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        app:itemIconTint="@color/nav_item_color"
-        app:itemTextColor="@color/nav_item_text_color"
-        app:menu="@menu/bottom_nav_menu"
-        app:labelVisibilityMode="labeled"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/player_list_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:layout_gravity="center"
+            android:dividerPadding="5dp"
+            android:orientation="vertical"
+       >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_player"
+                    android:contentDescription="@string/player_icon"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player Names"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player1"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                   android:textSize="10dp"
+                    android:hint="Player 1"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player2"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 2"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player3"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 3"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player4"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 4"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player5"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 5"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player6"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 6"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete6"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player7"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 7"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete7"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player8"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 8"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete8"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player9"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 9"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete9"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player10"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 10"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete10"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player11"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 11"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete11"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/player12"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:hint="Player 12"
+                    android:background="@drawable/edittext_background"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/delete12"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/delete_player"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/red" />
+            </LinearLayout>
+
+
+
+            <!-- Duplicate for player2 → player12, changing ids and hint accordingly -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_nav"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:itemIconTint="@color/nav_item_color"
+    app:itemTextColor="@color/nav_item_text_color"
+    app:itemTextAppearanceActive="@style/BottomNavTextSmall"
+    app:itemTextAppearanceInactive="@style/BottomNavTextSmall"
+    app:menu="@menu/bottom_nav_menu"
+    app:labelVisibilityMode="labeled"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

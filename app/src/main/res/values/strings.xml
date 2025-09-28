@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Volnet</string>
     <string name="add_teams">Add Teams</string>
+    <string name="add_team_logo">add_team_logo</string>
+    <string name="delete_player">delete the player</string>
+    <string name="player_icon">add player icon</string>
 </resources>

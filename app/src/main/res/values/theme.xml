@@ -6,6 +6,7 @@
         <item name="colorPrimaryVariant">@color/dark_red</item>
         <item name="colorOnPrimary">@android:color/white</item>
 
+
         <!-- Secondary colors -->
         <item name="colorSecondary">@color/blue</item>
         <item name="colorOnSecondary">@android:color/white</item>
@@ -17,6 +18,9 @@
         <item name="android:textColorPrimary">@android:color/black</item>
         <item name="android:textColorSecondary">@android:color/darker_gray</item>
     </style>
+    <style name="BottomNavTextSmall" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">10sp</item>
+    </style>
 
     <!-- Bottom Navigation style -->
     <style name="Widget.MediTrack.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
@@ -26,4 +30,5 @@
     </style>
 
     <color name="blue">#2196F3</color>
+
 </resources>

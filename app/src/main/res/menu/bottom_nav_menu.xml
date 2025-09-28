@@ -4,7 +4,9 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_launcher_foreground"
-        android:title="Home" />
+        android:title="Home"
+        
+        />
 
     <item
         android:id="@+id/nav_matches"
