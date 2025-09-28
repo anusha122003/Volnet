@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add_teams"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="10sp"
             android:textStyle="bold"
             android:shadowColor="#55000000"
@@ -421,7 +421,8 @@
     app:itemTextAppearanceActive="@style/BottomNavTextSmall"
     app:itemTextAppearanceInactive="@style/BottomNavTextSmall"
     app:menu="@menu/bottom_nav_menu"
-    app:labelVisibilityMode="labeled"
+        app:itemIconSize="15dp"
+        app:labelVisibilityMode="labeled"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"/>

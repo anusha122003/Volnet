@@ -3,24 +3,24 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/home"
         android:title="Home"
         
         />
 
     <item
         android:id="@+id/nav_matches"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/matches"
         android:title="Matches" />
 
     <item
         android:id="@+id/nav_teams"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/team"
         android:title="Teams" />
 
     <item
         android:id="@+id/nav_rules"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/rules"
         android:title="Rules" />
 
 </menu>
