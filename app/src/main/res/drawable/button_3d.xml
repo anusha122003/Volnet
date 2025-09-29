@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Gradient for 3D effect -->
+            <gradient
+                android:startColor="#B3C5F8 "
+                android:endColor="#3B73F8"
+                android:angle="270"/>
+            <corners android:radius="4dp"/> <!-- Rounded corners -->
+        </shape>
+    </item>
+</layer-list>

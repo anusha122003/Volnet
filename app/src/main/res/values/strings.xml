@@ -4,4 +4,5 @@
     <string name="add_team_logo">add_team_logo</string>
     <string name="delete_player">delete the player</string>
     <string name="player_icon">add player icon</string>
+    <string name="logo_icon">logo icon</string>
 </resources>
