@@ -4,4 +4,38 @@
     <string name="add_team_logo">add_team_logo</string>
     <string name="delete_player">delete the player</string>
     <string name="player_icon">add player icon</string>
+
+    <!-- create_match -->
+    <!-- Toolbar -->
+    <string name="create_match_app">Create Match</string>
+    <string name="back">back</string>
+
+    <!-- Match Information -->
+    <string name="match_information">Match Information</string>
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
+
+    <!-- Teams -->
+    <string name="teams">Teams</string>
+    <string name="team1">ADD Team 1</string>
+    <string name="team2">ADD Team 2</string>
+    <string name="vs">VS</string>
+
+    <!-- Match Rules -->
+    <string name="match_rules">MATCH RULES</string>
+    <string name="default_rules">DEFAULT</string>
+    <string name="rule_best_of">• Best of 5 sets</string>
+    <string name="rule_points_set">• Points to win set: 25</string>
+    <string name="rule_points_tiebreak">• Points to win tie break: 15</string>
+
+    <!-- Buttons -->
+    <string name="create_match">Create match</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_matches">Matches</string>
+    <string name="nav_teams">Teams</string>
+    <string name="nav_history">History</string>
+
 </resources>
+

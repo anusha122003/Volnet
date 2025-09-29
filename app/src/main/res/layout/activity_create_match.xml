@@ -58,15 +58,18 @@
         android:layout_marginHorizontal="16dp">
 
         <EditText
+            android:id="@+id/dateEditText"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
             android:autofillHints="0"
             android:hint="@string/date"
             android:drawableEnd="@drawable/date"
-            android:inputType="date" />
+            android:focusable="false"
+            android:inputType="none" />
 
         <EditText
+            android:id="@+id/timeEditText"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginStart="8dp"
@@ -74,7 +77,8 @@
             android:autofillHints="0"
             android:hint="@string/time"
             android:drawableEnd="@drawable/time"
-            android:inputType="time"/>
+            android:focusable="false"
+            android:inputType="none"/>
     </LinearLayout>
 
     <!-- Teams -->
@@ -97,6 +101,7 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/buttonTeam1"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/team1"
@@ -111,6 +116,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/buttonTeam2"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/team2"
@@ -171,6 +177,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/createMatchButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -181,74 +188,5 @@
         android:text="@string/create_match"
         android:textColor="@color/textGray"
         android:textSize="16sp"/>
-
-    <!--    &lt;!&ndash; Bottom Navigation &ndash;&gt;-->
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="60dp"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:gravity="space-around|center"-->
-<!--        android:background="#FFFFFF">-->
-
-<!--        <LinearLayout-->
-<!--            android:orientation="vertical"-->
-<!--            android:gravity="center"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="24dp"-->
-<!--                android:layout_height="24dp"-->
-<!--                android:src="@android:drawable/ic_menu_view" />-->
-<!--            <TextView-->
-<!--                android:text="Home"-->
-<!--                android:textSize="10sp" />-->
-<!--        </LinearLayout>-->
-
-<!--        <LinearLayout-->
-<!--            android:orientation="vertical"-->
-<!--            android:gravity="center"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="24dp"-->
-<!--                android:layout_height="24dp"-->
-<!--                android:src="@android:drawable/ic_menu_agenda" />-->
-<!--            <TextView-->
-<!--                android:text="Matches"-->
-<!--                android:textSize="10sp" />-->
-<!--        </LinearLayout>-->
-
-<!--        <LinearLayout-->
-<!--            android:orientation="vertical"-->
-<!--            android:gravity="center"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="24dp"-->
-<!--                android:layout_height="24dp"-->
-<!--                android:src="@android:drawable/ic_menu_my_places" />-->
-<!--            <TextView-->
-<!--                android:text="Teams"-->
-<!--                android:textSize="10sp" />-->
-<!--        </LinearLayout>-->
-
-<!--        <LinearLayout-->
-<!--            android:orientation="vertical"-->
-<!--            android:gravity="center"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="24dp"-->
-<!--                android:layout_height="24dp"-->
-<!--                android:src="@android:drawable/ic_menu_recent_history" />-->
-<!--            <TextView-->
-<!--                android:text="History"-->
-<!--                android:textSize="10sp" />-->
-<!--        </LinearLayout>-->
-<!--    </LinearLayout>-->
 
 </LinearLayout>

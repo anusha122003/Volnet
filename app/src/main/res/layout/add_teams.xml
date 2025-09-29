@@ -107,7 +107,7 @@
                  android:layout_width="85dp"
                  android:layout_height="85dp"
                  android:src="@drawable/logo"
-                 android:contentDescription="@string/logo_icon"
+                 android:contentDescription="logo_icon"
                  android:layout_marginEnd="8dp"
                  android:padding="4dp"/>
 
