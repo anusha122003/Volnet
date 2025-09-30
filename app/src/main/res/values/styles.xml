@@ -1,0 +1,34 @@
+<resources>
+    <!-- Default App Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Score Button (+ / -) -->
+    <style name="ScoreButton">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+
+    <!-- Timeout Button -->
+    <style name="TimeoutButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/textWhite</item>
+    </style>
+
+    <!-- Next Set Button -->
+    <style name="NextSetButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/textBlack</item>
+    </style>
+</resources>

@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    kotlin("android")
+    kotlin("kapt") // add kapt plugin for annotation processing
 }
 
 android {
@@ -29,6 +31,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = "11"  // Set JVM target to 11, or 17 if you want
+    }
 }
 
 dependencies {
@@ -40,4 +45,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 }

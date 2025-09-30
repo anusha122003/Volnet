@@ -9,16 +9,18 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+// TeamDatabaseHelper.java
+public class TeamDatabaseHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "sports.db";
+    private static final String DATABASE_NAME = "teams.db";
     private static final int DATABASE_VERSION = 1;
 
     private static final String TABLE_TEAM = "teams";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_NAME = "team_name";
+    private static final String COLUMN_LOGO = "team_logo";
 
-    public DatabaseHelper(Context context) {
+    public TeamDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -26,7 +28,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_TEAM_TABLE = "CREATE TABLE " + TABLE_TEAM + "("
                 + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + COLUMN_NAME + " TEXT)";
+                + COLUMN_NAME + " TEXT,"
+                + COLUMN_LOGO + " TEXT)";
         db.execSQL(CREATE_TEAM_TABLE);
     }
 
@@ -36,29 +39,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // Insert new team
-    public void addTeam(String teamName) {
+    public void addTeam(String teamName, String teamLogo) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, teamName);
+        values.put(COLUMN_LOGO, teamLogo);
         db.insert(TABLE_TEAM, null, values);
         db.close();
     }
 
-    // Get all teams
     public List<Team> getAllTeams() {
         List<Team> teamList = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_TEAM, null);
-
         if (cursor.moveToFirst()) {
             do {
-                int id = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID));
-                String name = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NAME));
-                teamList.add(new Team(id, name));
+                teamList.add(new Team(cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID)),
+                        cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NAME)),
+                        cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_LOGO))
+                ));
             } while (cursor.moveToNext());
         }
-
         cursor.close();
         db.close();
         return teamList;

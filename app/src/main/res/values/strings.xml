@@ -37,5 +37,31 @@
     <string name="nav_teams">Teams</string>
     <string name="nav_history">History</string>
 
+
+    <!-- Team Scoring Activity -->
+
+    <string name="team_scoring_app_name">Team Scoring</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="take_timeout">Take Timeout(%1$d)</string>
+    <string name="take_timeout_default">Take Timeout</string>
+    <string name="next_set">Next Set</string>
+    <string name="team_a_logo">Team logo</string>
+    <string name="team_b_logo">Team logo</string>
+    <string name="team_scoring">TEAM SCORING</string>
+    <string name="set_1">Set 1</string>
+    <string name="set_2">Set 2</string>
+    <string name="set_3">Set 3</string>
+    <string name="set_4">Set 4</string>
+    <string name="set_5">Set 5</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="zero">0</string>
+
+
+    <string name="timeout_team_a">Timeout(2)</string>
+    <string name="timeout_team_b">Timeout(2)</string>
+
+    <string name="end_match">End Match</string>
 </resources>
 

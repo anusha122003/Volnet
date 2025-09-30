@@ -22,4 +22,14 @@
 <color name="buttonDisabled">#E0E0E0</color>
 
 
+    <!-- team scoring activity -->
+    <color name="bgGray">#F5F5F5</color>
+    <color name="color_accent">#4CAF50</color>
+    <color name="buttonGray">#E0E0E0</color>
+
+    <color name="timeout_button">#F44336</color> <!-- Purple -->
+    <color name="timeout_text">#FFFFFF</color>
+
+    <color name="dark_gray">#A9A9A9</color> <!-- Dark Gray -->
+    <color name="light_dark">#D3D3D3</color>
 </resources>
