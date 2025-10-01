@@ -31,4 +31,18 @@
         <item name="android:backgroundTint">@color/colorAccent</item>
         <item name="android:textColor">@color/textBlack</item>
     </style>
+    <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemRippleColor">@color/page_background</item>
+
+        <item name="itemTextColor">@color/bottom_nav_colors</item>
+
+        <item name="itemIconTint">@color/bottom_nav_colors</item>
+    </style>
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="BottomNavSmallText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item> <!-- Smaller text size -->
+    </style>
 </resources>

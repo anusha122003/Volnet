@@ -32,11 +32,11 @@ public class AddTeamActivity extends AppCompatActivity {
 
         teamDbHelper = new TeamDatabaseHelper(this);
 
-        editTeamName = findViewById(R.id.editTeamName);
+        /*editTeamName = findViewById(R.id.editTeamName);
         buttonAddTeam = findViewById(R.id.buttonAddTeam);
         buttonPickImage = findViewById(R.id.buttonPickImage);
         imageTeamLogo = findViewById(R.id.imageTeamLogo);
-
+*/
 
         // Image picker launcher
         ActivityResultLauncher<String> pickImageLauncher = registerForActivityResult(
