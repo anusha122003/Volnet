@@ -6,11 +6,15 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-
         android:label="@string/app_name"
-
         android:supportsRtl="true"
         android:theme="@style/Theme.MediTrack">
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_history"
+            android:exported="false" />
         <activity
             android:name=".create_match"
             android:exported="false" />

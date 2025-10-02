@@ -37,4 +37,9 @@
 
     <color name="page_background">#FAFAFA</color>
     <color name="nav_item_background_color">#FAFAFA</color>
+
+    <color name="yellow">#FFEB3B</color>
+    <color name = "gold">#FFC107</color>
+    <color name = "light_grey_background">#808080</color>
+
 </resources>

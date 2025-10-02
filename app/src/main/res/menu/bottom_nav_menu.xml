@@ -20,7 +20,7 @@
 
     <item
         android:id="@+id/nav_rules"
-        android:icon="@drawable/rules"
-        android:title="Rules" />
+        android:icon="@drawable/history"
+        android:title="History" />
 
 </menu>
