@@ -1,26 +1,22 @@
 package com.example.volnet;
 
-import android.os.Bundle;
-import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.TextView;
 
 public class RulesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Ensure you use the correct layout name here
         setContentView(R.layout.activity_rules);
 
-        // 1. Setup the Back Arrow listener
-        ImageView backArrow = findViewById(R.id.back_arrow);
-        backArrow.setOnClickListener(v -> finish());
-
-        // 2. You can optionally load the rules dynamically here,
-        // but for now, the rules are hardcoded in the XML.
-
-        // 3. (Optional) Set up Bottom Navigation here if you include it.
-        // If the bottom nav is included in this layout, ensure it's selected.
+        // Example: you can load rules dynamically if needed
+        TextView rulesList = findViewById(R.id.rules_list);
+        rulesList.setText("1. Each team must have 6 players on the court.\n" +
+                "2. Maximum of 3 touches per side.\n" +
+                "3. The ball must not touch the ground.\n" +
+                "4. Matches are played best of 5 sets.\n" +
+                "5. Respect fair play at all times.");
     }
 }
-

@@ -16,7 +16,7 @@
         android:layout_height="60dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/purple_200"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -26,11 +26,11 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="@string/back"
-            android:src="@drawable/outline_arrow_back_24"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:tint="@color/black" />
+            app:layout_constraintBottom_toBottomOf="parent" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/rules"
+                android:src="@drawable/ic_rules"
                 android:contentDescription="@string/rules_icon"
                 android:layout_marginEnd="8dp"
                 app:tint="@color/black" />
