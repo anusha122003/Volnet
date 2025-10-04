@@ -13,19 +13,19 @@
         android:layout_height="24dp"
         android:layout_gravity="end"
         android:src="@drawable/close"
-        android:contentDescription="Close"
+        android:contentDescription="@string/close"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp" />
 
     <TextView
         android:id="@+id/dialog_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Are you sure?"
+        android:text="@string/confirm_delete_title"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
+        android:textColor="@color/black"
         android:layout_marginBottom="20dp" />
 
     <LinearLayout
@@ -37,22 +37,23 @@
             android:id="@+id/dialog_delete_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"
-            android:textColor="@android:color/white"
-            android:backgroundTint="#D32F2F"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
             android:layout_marginEnd="10dp"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:stateListAnimator="@null" />
+
         <Button
             android:id="@+id/dialog_cancel_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancel"
-            android:textColor="@android:color/black"
-            android:backgroundTint="@android:color/white"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             android:paddingTop="10dp"
@@ -61,4 +62,3 @@
             android:outlineProvider="none" />
     </LinearLayout>
 </LinearLayout>
-

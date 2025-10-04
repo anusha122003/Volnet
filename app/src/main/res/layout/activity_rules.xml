@@ -6,16 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@android:color/white"
+    android:background="@color/white"
     tools:context=".RulesActivity">
 
+    <!-- Header Layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header_layout"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:background="#D32F2F"
+        android:background="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -24,12 +25,12 @@
             android:id="@+id/back_arrow"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:contentDescription="Back"
+            android:contentDescription="@string/back"
             android:src="@drawable/outline_arrow_back_24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:tint="@android:color/black" />
+            app:tint="@color/black" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -45,20 +46,21 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/rules"
-                android:contentDescription="Rules Icon"
+                android:contentDescription="@string/rules_icon"
                 android:layout_marginEnd="8dp"
-                app:tint="@android:color/black" />
+                app:tint="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RULES"
-                android:textColor="@android:color/black"
+                android:text="@string/rules_title"
+                android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Rules Card -->
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -78,7 +80,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DEFAULT"
+                android:text="@string/default_label"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:textColor="@color/black"
@@ -91,10 +93,7 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:text="@string/default_rules" />
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

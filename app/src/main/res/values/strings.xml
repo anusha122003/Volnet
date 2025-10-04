@@ -23,7 +23,6 @@
 
     <!-- Match Rules -->
     <string name="match_rules">MATCH RULES</string>
-    <string name="default_rules">DEFAULT</string>
     <string name="rule_best_of">• Best of 5 sets</string>
     <string name="rule_points_set">• Points to win set: 25</string>
     <string name="rule_points_tiebreak">• Points to win tie break: 15</string>
@@ -63,5 +62,36 @@
     <string name="timeout_team_b">Timeout(2)</string>
 
     <string name="end_match">End Match</string>
+        <string name="history_icon">History Icon</string>
+        <string name="history_title">HISTORY</string>
+        <string name="search_hint">Search...</string>
+        <string name="sort_label">Sort</string>
+        <string name="sort">Sort</string>
+
+
+        <string name="rules_icon">Rules Icon</string>
+        <string name="rules_title">RULES</string>
+        <string name="default_label">DEFAULT</string>
+        <string name="default_rules">
+            <string name="rule_best_of">• Best of 5 sets</string>
+        <string name="rule_points_set">• Points to win set: 25</string>
+        <string name="rule_points_tiebreak">• Points to win tie break: 15</string>
+
+    </string>
+        <string name="close">Close</string>
+        <string name="confirm_delete_title">Are you sure?</string>
+        <string name="delete">Delete</string>
+        <string name="cancel">Cancel</string>
+    <string name="team_a_winner">Team A Winner</string>
+    <string name="team_b_winner">Team B Winner</string>
+
+    <string name="vs_text">VS</string>
+    <string name="delete_match">Delete Match</string>
+    <string name="more_options">More Options</string>
+    <string name="trophy_icon">Trophy Icon</string>
+    <string name="export">EXPORT</string
+
+
+
 </resources>
 
