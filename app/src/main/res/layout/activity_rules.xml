@@ -26,7 +26,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="@string/back"
-            android:src="@drawable/ic_arrow_back"
+            android:src="@drawable/baseline_add_24"
             app:tint="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -45,7 +45,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_rules"
+                android:src="@drawable/rules"
                 android:contentDescription="@string/rules_icon"
                 android:layout_marginEnd="8dp"
                 app:tint="@color/black" />
